@@ -1,10 +1,12 @@
 import "./App.css";
-import Simpleform from "./assets/Simpleform/Simpleform";
+import StateForm from "./Components/StateForm/StateForm";
+// import Simpleform from "./Components/Simpleform/Simpleform";
 
 function App() {
   return (
     <div>
-      <Simpleform></Simpleform>
+      {/* <Simpleform></Simpleform> */}
+      <StateForm></StateForm>
     </div>
   );
 }
