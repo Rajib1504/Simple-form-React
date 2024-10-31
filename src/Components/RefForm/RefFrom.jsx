@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 
 const RefFrom = () => {
   const handelSubmit = (e) => {
@@ -7,9 +7,14 @@ const RefFrom = () => {
     console.log(emailRef.current.value);
     console.log(passRef.current.value);
   };
-  const nameRef = useRef();
-  const emailRef = useRef();
-  const passRef = useRef(); // for get refference
+
+  const nameRef = useRef(null);
+  const emailRef = useRef(null);
+  const passRef = useRef(null); // for get refference
+
+  useEffect(() => {
+    nameRef.current.focus();
+  }, []); // focusing on element
   return (
     <div>
       <form
@@ -22,6 +27,7 @@ const RefFrom = () => {
           type="email"
           name="email"
           ref={emailRef}
+          defaultValue={"rojonikalnata@gmail.com"} //default vlaue setting
           className="border-2
         "
           placeholder="email"
