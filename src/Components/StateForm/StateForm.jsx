@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const StateForm = () => {
   const [email, setEmail] = useState(null);
-  const [name, setname] = useState(null);
+  const [name, setname] = useState("name"); //default value
   const [password, setPassword] = useState(null);
   const [error, setError] = useState("");
   const handelfrom = (e) => {
