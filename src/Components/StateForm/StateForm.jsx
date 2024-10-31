@@ -29,7 +29,7 @@ const StateForm = () => {
     <div>
       <form
         onSubmit={handelfrom}
-        className="bg-green-300 flex flex-col justify-center items-center"
+        className="bg-green-200 flex flex-col justify-center items-center"
       >
         <input
           type="text"
